@@ -484,7 +484,7 @@
 	desc = "The subject's brainwaves will occasionally involuntarily switch with those of another near them."
 	id = "mind_jockey"
 	effectType = effectTypeDisability
-	occur_in_genepools = 0
+	occur_in_genepools = 1
 	isBad = 1
 	msgGain = "You wanna be somebody else."
 	msgLose = "You're happy with yourself."
@@ -514,7 +514,7 @@
 	desc = "This function of this gene is not well-researched."
 	researched_desc = "This gene has random, unpredictable effects on the subject."
 	id = "randomeffects"
-	occur_in_genepools = 0
+	occur_in_genepools = 1
 	blockCount = 2
 	blockGaps = 4
 	lockProb = 66
@@ -523,7 +523,7 @@
 	lockedChars = list("G","C","A","T")
 	lockedTries = 10
 	curable_by_mutadone = 0
-	stability_loss = 15
+	stability_loss = 0
 	var/prob_per_tick = 15
 	var/list/emotes = list("slap","snap","hiccup","burp","fart","dance","tantrum","flipoff","flip","boggle")
 	var/list/noises = list('sound/items/hellhorn_0.ogg','sound/effects/cat.ogg','sound/items/sax.ogg',

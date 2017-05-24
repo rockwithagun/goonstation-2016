@@ -11,7 +11,7 @@
 	blockCount = 3
 	msgGain = "You feel cold."
 	msgLose = "You feel warm."
-	stability_loss = 10
+	stability_loss = 0
 
 	OnAdd()
 		if (ishuman(owner))
@@ -28,7 +28,7 @@
 	blockCount = 3
 	msgGain = "You feel warm."
 	msgLose = "You feel cold."
-	stability_loss = 10
+	stability_loss = 0
 	// you feel warm because you're resisting the cold, stop changing these around! =(
 
 	OnAdd()
@@ -44,7 +44,7 @@
 	effectType = effectTypePower
 	blockCount = 3
 	occur_in_genepools = 0
-	stability_loss = 10
+	stability_loss = 0
 	var/image/overlay_image_two = null
 
 	OnAdd()
@@ -74,7 +74,7 @@
 	probability = 66
 	blockCount = 3
 	blockGaps = 3
-	stability_loss = 15
+	stability_loss = 0
 	msgGain = "Your hair stands on end."
 	msgLose = "The tingling in your skin fades."
 
@@ -94,7 +94,7 @@
 	effectType = effectTypePower
 	blockCount = 2
 	secret = 1
-	stability_loss = 15
+	stability_loss = 0
 
 /datum/bioEffect/alcres
 	name = "Alcohol Resistance"
@@ -115,7 +115,7 @@
 	blockGaps = 5
 	reclaim_mats = 40
 	curable_by_mutadone = 0
-	stability_loss = 40
+	stability_loss = 0
 	msgGain = "You feel refreshed and clean."
 	msgLose = "You feel a bit grody."
 
@@ -139,7 +139,7 @@
 	lockedDiff = 4
 	lockedChars = list("G","C","A","T")
 	lockedTries = 10
-	stability_loss = 40
+	stability_loss = 0
 	msgGain = "Your lungs feel strangely empty."
 	msgLose = "You start gasping for air."
 
@@ -170,7 +170,7 @@
 	lockedDiff = 4
 	lockedChars = list("G","C","A","T")
 	lockedTries = 10
-	stability_loss = 40
+	stability_loss = 0
 	msgGain = "Your skin feels tingly and shifty."
 	msgLose = "Your skin tightens."
 	var/heal_per_tick = 1
@@ -200,7 +200,7 @@
 	lockedTries = 10
 	curable_by_mutadone = 0
 	var/remove_per_tick = 5
-	stability_loss = 15
+	stability_loss = 0
 
 	OnLife()
 		var/mob/living/L = owner
@@ -227,7 +227,7 @@
 	lockedChars = list("A","T")
 	lockedTries = 6
 	var/active = 0
-	stability_loss = 15
+	stability_loss = 0
 
 	OnLife()
 		if (prob(20))
@@ -249,7 +249,7 @@
 	lockedDiff = 4
 	lockedChars = list("A","T")
 	lockedTries = 6
-	stability_loss = 5
+	stability_loss = 0
 
 /datum/bioEffect/dead_scan
 	name = "Pseudonecrosis"
@@ -257,7 +257,7 @@
 	id = "dead_scan"
 	effectType = effectTypePower
 	probability = 99
-	stability_loss = 5
+	stability_loss = 0
 
 ///////////////////
 // General buffs //
@@ -288,7 +288,7 @@
 	lockedDiff = 3
 	lockedChars = list("G","C","A","T")
 	lockedTries = 8
-	stability_loss = 5
+	stability_loss = 0
 
 	OnAdd()
 		radio_brains += owner
@@ -314,7 +314,7 @@ var/list/radio_brains = list()
 	lockedDiff = 3
 	lockedChars = list("G","C","A","T")
 	lockedTries = 8
-	stability_loss = 25
+	stability_loss = 0
 
 	OnAdd()
 		owner.unlock_medal("It's not easy being green", 1)
@@ -358,7 +358,7 @@ var/list/radio_brains = list()
 	lockedDiff = 3
 	lockedChars = list("G","C","A","T")
 	lockedTries = 8
-	stability_loss = 30
+	stability_loss = 0
 
 /datum/bioEffect/toxic_farts
 	name = "High Decay Digestion"
@@ -374,7 +374,7 @@ var/list/radio_brains = list()
 	lockedDiff = 3
 	lockedChars = list("G","C","A","T")
 	lockedTries = 8
-	stability_loss = 10
+	stability_loss = 0
 
 ///////////////////////////
 // Disabled/Inaccessible //

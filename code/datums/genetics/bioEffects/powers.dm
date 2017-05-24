@@ -9,7 +9,7 @@
 	probability = 66
 	blockCount = 3
 	blockGaps = 2
-	stability_loss = 10
+	stability_loss = 0
 	var/using = 0
 	var/safety = 0
 	var/power = 0
@@ -98,7 +98,7 @@
 	probability = 66
 	blockCount = 4
 	blockGaps = 2
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/mattereater
 	var/target_path = "/obj/item/"
 
@@ -185,7 +185,7 @@
 	probability = 99
 	blockCount = 4
 	blockGaps = 2
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/jumpy
 
 /datum/targetable/geneticsAbility/jumpy
@@ -266,7 +266,7 @@
 	probability = 66
 	blockCount = 4
 	blockGaps = 4
-	stability_loss = 15
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/polymorphism
 
 /datum/targetable/geneticsAbility/polymorphism
@@ -319,7 +319,7 @@
 	probability = 99
 	blockCount = 4
 	blockGaps = 2
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/telepathy
 
 /datum/targetable/geneticsAbility/telepathy
@@ -384,7 +384,7 @@
 	probability = 99
 	blockCount = 3
 	blockGaps = 2
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/empath
 
 /datum/targetable/geneticsAbility/empath
@@ -492,7 +492,7 @@
 	probability = 66
 	blockCount = 3
 	blockGaps = 2
-	stability_loss = 10
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/immolate
 
 /datum/targetable/geneticsAbility/immolate
@@ -533,7 +533,7 @@
 	probability = 66
 	blockCount = 3
 	blockGaps = 2
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/melt
 
 /datum/targetable/geneticsAbility/melt
@@ -586,7 +586,7 @@
 	probability = 33
 	blockCount = 4
 	blockGaps = 3
-	stability_loss = 15
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/superfart
 	var/farting = 0
 
@@ -680,7 +680,7 @@
 	probability = 33
 	blockCount = 3
 	blockGaps = 5
-	stability_loss = 10
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/eyebeams
 	var/projectile_path = "/datum/projectile/laser/eyebeams"
 
@@ -732,7 +732,7 @@
 	cooldown = 600
 	msgGain = "You feel hype!"
 	msgLose = "You don't feel so pumped anymore."
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/adrenaline
 
 /datum/targetable/geneticsAbility/adrenaline
@@ -774,7 +774,7 @@
 	probability = 99
 	blockCount = 2
 	blockGaps = 4
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/midas
 	var/transmute_material = "gold"
 
@@ -833,7 +833,7 @@
 	msgLose = "The aura around your hands dissipates."
 	cooldown = 900
 	occur_in_genepools = 0
-	stability_loss = 10
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/healing_touch
 
 /datum/targetable/geneticsAbility/healing_touch
@@ -883,7 +883,7 @@
 	msgLose = "The blue light fades away."
 	cooldown = 900
 	occur_in_genepools = 0
-	stability_loss = 20
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/dimension_shift
 	var/active = 0
 	var/processing = 0
@@ -955,7 +955,7 @@
 	msgLose = "It's too bright!"
 	cooldown = 600
 	occur_in_genepools = 0
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/photokinesis
 	var/red = 0
 	var/green = 0
@@ -1027,7 +1027,7 @@
 	msgLose = "It's too dark!"
 	cooldown = 600
 	occur_in_genepools = 0
-	stability_loss = 5
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/erebokinesis
 	var/time = 0
 	var/size = 0
@@ -1074,7 +1074,7 @@
 	msgLose = "Your throat feels a lot better now."
 	cooldown = 600
 	occur_in_genepools = 0
-	stability_loss = 10
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/fire_breath
 	var/temperature = 1200
 	var/range = 4
@@ -1127,7 +1127,7 @@
 	cooldown = 30
 	blockCount = 1
 	blockGaps = 3
-	stability_loss = 15
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/brown_note
 
 /datum/targetable/geneticsAbility/brown_note
@@ -1164,7 +1164,7 @@
 	reclaim_mats = 40
 	msgGain = "You feel your consciousness expand outwards."
 	msgLose = "Your conciousness closes inwards."
-	stability_loss = 15
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/telekinesis
 
 	OnMobDraw()
@@ -1202,8 +1202,8 @@
 	reclaim_mats = 40
 	msgGain = "You feel your consciousness expand outwards."
 	msgLose = "Your conciousness closes inwards."
-	stability_loss = 30
-	occur_in_genepools = 0
+	stability_loss = 0
+	occur_in_genepools = 1
 	ability_path = /datum/targetable/geneticsAbility/telekinesis
 
 /datum/targetable/geneticsAbility/telekinesis
@@ -1256,7 +1256,7 @@
 	lockedDiff = 3
 	lockedChars = list("G","C","A","T")
 	lockedTries = 8
-	stability_loss = 20
+	stability_loss = 0
 	cooldown = 0
 	var/active = 0
 	ability_path = /datum/targetable/geneticsAbility/darkcloak
@@ -1343,7 +1343,7 @@
 	lockedDiff = 3
 	lockedChars = list("G","C","A","T")
 	lockedTries = 8
-	stability_loss = 20
+	stability_loss = 0
 	cooldown = 0
 	var/active = 0
 	ability_path = /datum/targetable/geneticsAbility/chameleon
@@ -1402,7 +1402,7 @@
 	msgLose = "You feel much better!"
 	cooldown = 300
 	occur_in_genepools = 0
-	stability_loss = 10
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/bigpuke
 	var/range = 3
 
@@ -1459,7 +1459,7 @@
 	msgLose = "You don't really feel artistic anymore."
 	cooldown = 0
 	occur_in_genepools = 0
-	stability_loss = 2
+	stability_loss = 0
 	ability_path = /datum/targetable/geneticsAbility/ink
 	var/color = "#888888"
 
